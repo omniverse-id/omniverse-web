@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Globe, MessageSquare } from 'lucide-react';
+import { Menu, X, MessageSquare } from 'lucide-react';
 import { Language } from '../types';
 import { translationKeys } from '../data/websiteContent';
 import Logo from './Logo';
@@ -70,7 +70,7 @@ export const Navbar: React.FC<NavbarProps> = ({ language, setLanguage }) => {
                   key={link.href}
                   href={link.href}
                   onClick={(e) => handleScrollTo(e, link.href)}
-                  className="font-sans text-sm text-zinc-500 hover:text-zinc-900 transition-colors py-2 relative group font-medium"
+                  className="font-sans text-[15px] text-zinc-500 hover:text-zinc-950 transition-colors py-2 relative group font-semibold"
                 >
                   {link.label}
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-zinc-900 transition-all duration-300 group-hover:w-full" />
@@ -82,11 +82,10 @@ export const Navbar: React.FC<NavbarProps> = ({ language, setLanguage }) => {
             <div className="hidden md:flex items-center gap-6">
               {/* Language Switcher Sliding Pill */}
               <div className="bg-zinc-100 border-[0.5px] border-zinc-200 p-1 rounded-full flex items-center relative gap-1">
-                <Globe className="w-4 h-4 text-zinc-400 ml-2 mr-1" />
                 <button
                   onClick={() => setLanguage('id')}
                   className={`relative px-3 py-1 rounded-full text-xs font-mono transition-colors duration-200 z-10 font-bold ${
-                    language === 'id' ? 'text-white' : 'text-zinc-500 hover:text-zinc-800'
+                    language === 'id' ? 'text-white' : 'text-zinc-500 hover:text-zinc-850'
                   }`}
                 >
                   {language === 'id' && (
@@ -101,7 +100,7 @@ export const Navbar: React.FC<NavbarProps> = ({ language, setLanguage }) => {
                 <button
                   onClick={() => setLanguage('en')}
                   className={`relative px-3 py-1 rounded-full text-xs font-mono transition-colors duration-200 z-10 font-bold ${
-                    language === 'en' ? 'text-white' : 'text-zinc-500 hover:text-zinc-800'
+                    language === 'en' ? 'text-white' : 'text-zinc-500 hover:text-zinc-850'
                   }`}
                 >
                   {language === 'en' && (
@@ -164,7 +163,7 @@ export const Navbar: React.FC<NavbarProps> = ({ language, setLanguage }) => {
                   key={link.href}
                   href={link.href}
                   onClick={(e) => handleScrollTo(e, link.href)}
-                  className="font-sans text-base font-semibold text-zinc-600 hover:text-zinc-950 transition-colors"
+                  className="font-sans text-[17px] font-bold text-zinc-700 hover:text-zinc-950 py-1 transition-colors"
                 >
                   {link.label}
                 </a>

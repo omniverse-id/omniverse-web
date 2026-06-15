@@ -128,7 +128,7 @@ export const Services: React.FC<ServicesProps> = ({ language }) => {
 
               {/* Icon & Title block */}
               <div className="space-y-3 pt-2">
-                <div className="inline-flex text-zinc-900 border-[0.5px] border-zinc-150 p-2.5 rounded-xl bg-zinc-50">
+                <div className="inline-flex text-zinc-900 border-[0.5px] border-zinc-200/45 p-2.5 rounded-xl bg-zinc-50">
                   {getIconComponent(selectedService.icon)}
                 </div>
                 <h3 className="font-sans text-2xl font-extrabold text-zinc-950 tracking-tight">

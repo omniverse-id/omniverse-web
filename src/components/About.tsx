@@ -77,7 +77,7 @@ export const About: React.FC<AboutProps> = ({ language }) => {
                 transition={{ duration: 0.4, delay: idx * 0.08 }}
                 className="bg-white border-[0.5px] border-zinc-100 hover:border-zinc-200 h-40 p-6 rounded-2xl flex flex-col justify-between group transition-all duration-300 shadow-sm hover:shadow-md"
               >
-                <div className="bg-zinc-50 border-[0.5px] border-zinc-150 p-2.5 rounded-xl inline-flex w-fit text-zinc-950 transition-colors">
+                <div className="bg-zinc-50 border-[0.5px] border-zinc-200/45 p-2.5 rounded-xl inline-flex w-fit text-zinc-950 transition-colors">
                   {getAboutIcon(idx)}
                 </div>
                 

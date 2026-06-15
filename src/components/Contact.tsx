@@ -80,7 +80,7 @@ Mohon info ketersediaan konsultasi. Terima kasih!`;
               
               {/* Address card */}
               <div className="flex items-start gap-4">
-                <div className="bg-zinc-50 border-[0.5px] border-zinc-150 text-zinc-900 p-2.5 rounded-xl">
+                <div className="bg-zinc-50 border-[0.5px] border-zinc-200/45 text-zinc-900 p-2.5 rounded-xl">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div className="space-y-1">
@@ -104,7 +104,7 @@ Mohon info ketersediaan konsultasi. Terima kasih!`;
 
               {/* WhatsApp card */}
               <div className="flex items-start gap-4 border-t-[0.5px] border-zinc-100 pt-6">
-                <div className="bg-zinc-50 border-[0.5px] border-zinc-150 text-zinc-900 p-2.5 rounded-xl">
+                <div className="bg-zinc-50 border-[0.5px] border-zinc-200/45 text-zinc-900 p-2.5 rounded-xl">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div className="space-y-1">

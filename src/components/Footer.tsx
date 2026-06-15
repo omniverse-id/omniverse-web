@@ -20,7 +20,7 @@ export const Footer: React.FC<FooterProps> = ({ language }) => {
   };
 
   return (
-    <footer className="bg-zinc-50 border-t-[0.5px] border-zinc-150 py-16 scroll-mt-10">
+    <footer className="bg-zinc-50 border-t-[0.5px] border-zinc-200/10 py-12 scroll-mt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 text-zinc-500">
@@ -90,7 +90,7 @@ export const Footer: React.FC<FooterProps> = ({ language }) => {
         </div>
 
         {/* Small copyright signature block */}
-        <div className="mt-16 pt-8 border-t-[0.5px] border-zinc-150 flex flex-col sm:flex-row items-center justify-between gap-4 text-2xs font-mono text-zinc-450 font-bold">
+        <div className="mt-8 pt-4 border-t-[0.5px] border-zinc-200/[0.08] flex flex-col sm:flex-row items-center justify-between gap-4 text-2xs font-mono text-zinc-400 font-normal">
           <span>&copy; {currentYear} Omniverse One. All rights reserved.</span>
           <div className="flex gap-4">
             <span>Tamansari, Bogor, Indonesia</span>
