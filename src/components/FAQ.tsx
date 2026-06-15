@@ -16,7 +16,7 @@ export const FAQ: React.FC<FAQProps> = ({ language }) => {
   };
 
   return (
-    <section id="faq" className="py-24 bg-white border-t border-zinc-100 scroll-mt-10 relative">
+    <section id="faq" className="py-24 bg-white border-t-[0.5px] border-zinc-100 scroll-mt-10 relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         {/* Header block */}
@@ -39,7 +39,7 @@ export const FAQ: React.FC<FAQProps> = ({ language }) => {
             return (
               <div
                 key={index}
-                className="border border-zinc-150 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
+                className="border-[0.5px] border-zinc-150 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
               >
                 <button
                   onClick={() => toggleAccordion(index)}
@@ -61,7 +61,7 @@ export const FAQ: React.FC<FAQProps> = ({ language }) => {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.25, ease: 'easeInOut' }}
                     >
-                      <div className="px-6 pb-6 pt-1 border-t border-zinc-100 text-zinc-650 font-sans text-sm leading-relaxed font-semibold">
+                      <div className="px-6 pb-6 pt-1 border-t-[0.5px] border-zinc-100 text-zinc-650 font-sans text-sm leading-relaxed font-semibold">
                         {faq.a[language]}
                       </div>
                     </motion.div>

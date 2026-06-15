@@ -57,7 +57,7 @@ Mohon info ketersediaan konsultasi. Terima kasih!`;
   };
 
   return (
-    <section id="contact" className="py-24 bg-white border-t border-zinc-100 scroll-mt-10 relative">
+    <section id="contact" className="py-24 bg-white border-t-[0.5px] border-zinc-100 scroll-mt-10 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header content */}
@@ -76,11 +76,11 @@ Mohon info ketersediaan konsultasi. Terima kasih!`;
           <div className="lg:col-span-5 space-y-8">
             
             {/* Quick stats items */}
-            <div className="bg-white border border-zinc-100 rounded-2xl p-6 space-y-6 shadow-sm">
+            <div className="bg-white border-[0.5px] border-zinc-100 rounded-2xl p-6 space-y-6 shadow-sm">
               
               {/* Address card */}
               <div className="flex items-start gap-4">
-                <div className="bg-zinc-50 border border-zinc-150 text-zinc-900 p-2.5 rounded-xl">
+                <div className="bg-zinc-50 border-[0.5px] border-zinc-150 text-zinc-900 p-2.5 rounded-xl">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div className="space-y-1">
@@ -103,8 +103,8 @@ Mohon info ketersediaan konsultasi. Terima kasih!`;
               </div>
 
               {/* WhatsApp card */}
-              <div className="flex items-start gap-4 border-t border-zinc-100 pt-6">
-                <div className="bg-zinc-50 border border-zinc-150 text-zinc-900 p-2.5 rounded-xl">
+              <div className="flex items-start gap-4 border-t-[0.5px] border-zinc-100 pt-6">
+                <div className="bg-zinc-50 border-[0.5px] border-zinc-150 text-zinc-900 p-2.5 rounded-xl">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div className="space-y-1">
@@ -129,7 +129,7 @@ Mohon info ketersediaan konsultasi. Terima kasih!`;
             </div>
 
             {/* Elegant gray-dark custom Google Map iframe */}
-            <div className="border border-zinc-150 rounded-2xl overflow-hidden shadow-xl aspect-video relative group bg-zinc-50 h-64">
+            <div className="border-[0.5px] border-zinc-150 rounded-2xl overflow-hidden shadow-xl aspect-video relative group bg-zinc-50 h-64">
               <iframe
                 title="Omniverse One Tamansari Bogor Map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15851.639343547204!2d106.7766!3d-6.658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69cf2fae509cf7%3A0x6338b935dfa14b5c!2sCiwaru%20Indah%20Residence!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
@@ -146,7 +146,7 @@ Mohon info ketersediaan konsultasi. Terima kasih!`;
           </div>
 
           {/* Right panel: Active Form (span 7) */}
-          <div className="lg:col-span-7 bg-white border border-zinc-100 rounded-2xl p-6 sm:p-8 space-y-6 shadow-sm">
+          <div className="lg:col-span-7 bg-white border-[0.5px] border-zinc-100 rounded-2xl p-6 sm:p-8 space-y-6 shadow-sm">
             
             <div className="space-y-1">
               <h3 className="font-sans text-xl font-bold text-zinc-900">
@@ -171,7 +171,7 @@ Mohon info ketersediaan konsultasi. Terima kasih!`;
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="e.g. Amanda Novita"
-                  className="w-full bg-zinc-50 border border-zinc-200 focus:border-zinc-500 text-zinc-900 placeholder-zinc-400 rounded-xl px-4 py-3 text-sm focus:outline-none transition-colors font-medium resize-none shadow-sm"
+                  className="w-full bg-zinc-50 border-[0.5px] border-zinc-200 focus:border-zinc-500 text-zinc-900 placeholder-zinc-400 rounded-xl px-4 py-3 text-sm focus:outline-none transition-colors font-medium resize-none shadow-sm"
                 />
               </div>
 
@@ -184,7 +184,7 @@ Mohon info ketersediaan konsultasi. Terima kasih!`;
                   <button
                     type="button"
                     onClick={() => setClientType('business')}
-                    className={`font-sans py-3 rounded-xl text-xs font-bold border transition-all duration-300 ${
+                    className={`font-sans py-3 rounded-xl text-xs font-bold border-[0.5px] transition-all duration-300 ${
                       clientType === 'business'
                         ? 'bg-zinc-900 border-zinc-900 text-white shadow-sm'
                         : 'bg-zinc-50 border-zinc-200 text-zinc-500 hover:text-zinc-900 hover:border-zinc-400'
@@ -195,7 +195,7 @@ Mohon info ketersediaan konsultasi. Terima kasih!`;
                   <button
                     type="button"
                     onClick={() => setClientType('individual')}
-                    className={`font-sans py-3 rounded-xl text-xs font-bold border transition-all duration-300 ${
+                    className={`font-sans py-3 rounded-xl text-xs font-bold border-[0.5px] transition-all duration-300 ${
                       clientType === 'individual'
                         ? 'bg-zinc-900 border-zinc-900 text-white shadow-sm'
                         : 'bg-zinc-50 border-zinc-200 text-zinc-500 hover:text-zinc-900 hover:border-zinc-400'
@@ -216,7 +216,7 @@ Mohon info ketersediaan konsultasi. Terima kasih!`;
                     id="service-select"
                     value={selectedService}
                     onChange={(e) => setSelectedService(e.target.value)}
-                    className="w-full bg-zinc-50 border border-zinc-200 focus:border-zinc-500 text-zinc-900 rounded-xl px-4 py-3 text-sm focus:outline-none transition-colors appearance-none cursor-pointer font-bold shadow-sm"
+                    className="w-full bg-zinc-50 border-[0.5px] border-zinc-200 focus:border-zinc-500 text-zinc-900 rounded-xl px-4 py-3 text-sm focus:outline-none transition-colors appearance-none cursor-pointer font-bold shadow-sm"
                   >
                     {servicesData.map((s) => (
                       <option key={s.id} value={s.id} className="bg-white text-zinc-900 font-bold">
@@ -238,7 +238,7 @@ Mohon info ketersediaan konsultasi. Terima kasih!`;
                   value={notes}
                   onChange={(e) => setNotes(e.target.value)}
                   placeholder={translationKeys.placeholderNotes[language]}
-                  className="w-full bg-zinc-50 border border-zinc-200 focus:border-zinc-500 text-zinc-900 placeholder-zinc-400 rounded-xl p-4 text-sm focus:outline-none resize-none transition-colors font-medium shadow-sm animate-none"
+                  className="w-full bg-zinc-50 border-[0.5px] border-zinc-200 focus:border-zinc-500 text-zinc-900 placeholder-zinc-400 rounded-xl p-4 text-sm focus:outline-none resize-none transition-colors font-medium shadow-sm animate-none"
                 />
               </div>
 
@@ -255,7 +255,7 @@ Mohon info ketersediaan konsultasi. Terima kasih!`;
 
               {/* Submitted status indicator */}
               {submitted && (
-                <div className="bg-emerald-50 border border-emerald-100 p-4 rounded-xl flex items-center gap-3 animate-fade-in">
+                <div className="bg-emerald-50 border-[0.5px] border-emerald-100 p-4 rounded-xl flex items-center gap-3 animate-fade-in">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
                   <p className="font-sans text-xs text-emerald-800 font-bold">
                     {language === 'en'

@@ -26,7 +26,7 @@ export const About: React.FC<AboutProps> = ({ language }) => {
   };
 
   return (
-    <section id="about" className="py-24 bg-white border-t border-zinc-100 scroll-mt-10 relative overflow-hidden">
+    <section id="about" className="py-24 bg-white border-t-[0.5px] border-zinc-100 scroll-mt-10 relative overflow-hidden">
       {/* Background radial highlight */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-72 h-72 bg-zinc-50 rounded-full blur-3xl pointer-events-none" />
 
@@ -54,7 +54,7 @@ export const About: React.FC<AboutProps> = ({ language }) => {
             </p>
             
             {/* Visual Callout block */}
-            <div className="border border-zinc-150 bg-zinc-50/50 p-6 rounded-2xl space-y-3 mt-8">
+            <div className="border-[0.5px] border-zinc-150 bg-zinc-50/50 p-6 rounded-2xl space-y-3 mt-8">
               <span className="font-mono text-2xs uppercase tracking-widest text-zinc-500 font-bold block">
                 {language === 'en' ? 'THE OMNIVERSE PHILOSOPHY' : 'FILOSOFI OMNIVERSE'}
               </span>
@@ -75,9 +75,9 @@ export const About: React.FC<AboutProps> = ({ language }) => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: idx * 0.08 }}
-                className="bg-white border border-zinc-100 hover:border-zinc-200 h-40 p-6 rounded-2xl flex flex-col justify-between group transition-all duration-300 shadow-sm hover:shadow-md"
+                className="bg-white border-[0.5px] border-zinc-100 hover:border-zinc-200 h-40 p-6 rounded-2xl flex flex-col justify-between group transition-all duration-300 shadow-sm hover:shadow-md"
               >
-                <div className="bg-zinc-50 border border-zinc-150 p-2.5 rounded-xl inline-flex w-fit text-zinc-950 transition-colors">
+                <div className="bg-zinc-50 border-[0.5px] border-zinc-150 p-2.5 rounded-xl inline-flex w-fit text-zinc-950 transition-colors">
                   {getAboutIcon(idx)}
                 </div>
                 

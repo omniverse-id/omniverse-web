@@ -43,7 +43,7 @@ export const Hero: React.FC<HeroProps> = ({ language }) => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 border border-zinc-200 bg-zinc-50 rounded-full text-xs font-mono text-zinc-600 shadow-sm"
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 border-[0.5px] border-zinc-200 bg-zinc-50 rounded-full text-xs font-mono text-zinc-600 shadow-sm"
           >
             <Sparkles className="w-3.5 h-3.5 text-zinc-500 animate-pulse animate-duration-1000" />
             <span className="tracking-wide font-medium">
@@ -91,7 +91,7 @@ export const Hero: React.FC<HeroProps> = ({ language }) => {
               href={`https://wa.me/62${translationKeys.whatsappNumber}?text=Halo%20Omniverse%20One,%20saya%20ingin%20konsultasi%20jasa%20teknologi.`}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto border border-zinc-200 bg-white hover:bg-zinc-50 text-zinc-700 hover:text-zinc-950 font-sans font-semibold px-8 py-3.5 rounded-full text-sm inline-flex items-center justify-center gap-2 transition-all duration-200 shadow-sm"
+              className="w-full sm:w-auto border-[0.5px] border-zinc-200 bg-white hover:bg-zinc-50 text-zinc-700 hover:text-zinc-950 font-sans font-semibold px-8 py-3.5 rounded-full text-sm inline-flex items-center justify-center gap-2 transition-all duration-200 shadow-sm"
             >
               <span>{translationKeys.whatsappDirect[language]}</span>
             </a>
@@ -102,7 +102,7 @@ export const Hero: React.FC<HeroProps> = ({ language }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.8 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="pt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto border-t border-zinc-100"
+            className="pt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto border-t-[0.5px] border-zinc-100"
           >
             {[
               { icon: LayoutTemplate, label: language === 'en' ? 'Web Design' : 'Portal Web' },

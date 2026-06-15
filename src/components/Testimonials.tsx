@@ -11,7 +11,7 @@ interface TestimonialsProps {
 
 export const Testimonials: React.FC<TestimonialsProps> = ({ language }) => {
   return (
-    <section className="py-24 bg-white border-t border-zinc-100 overflow-hidden relative">
+    <section className="py-24 bg-white border-t-[0.5px] border-zinc-100 overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header content */}
@@ -36,7 +36,7 @@ export const Testimonials: React.FC<TestimonialsProps> = ({ language }) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-white border border-zinc-100 hover:border-zinc-200 p-6 sm:p-8 rounded-2xl flex flex-col justify-between space-y-8 relative group hover:bg-zinc-50/50 hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md"
+              className="bg-white border-[0.5px] border-zinc-100 hover:border-zinc-200 p-6 sm:p-8 rounded-2xl flex flex-col justify-between space-y-8 relative group hover:bg-zinc-50/50 hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <Quote className="absolute top-6 right-8 w-8 h-8 text-zinc-100 pointer-events-none group-hover:scale-110 transition-transform duration-300" />
               
@@ -44,12 +44,12 @@ export const Testimonials: React.FC<TestimonialsProps> = ({ language }) => {
                 "{testimonial.content[language]}"
               </p>
 
-              <div className="flex items-center gap-4 pt-4 border-t border-zinc-100">
+              <div className="flex items-center gap-4 pt-4 border-t-[0.5px] border-zinc-100">
                 <img
                   src={testimonial.avatar}
                   alt={testimonial.name}
                   referrerPolicy="no-referrer"
-                  className="w-10 h-10 rounded-full object-cover border border-zinc-200 shrink-0"
+                  className="w-10 h-10 rounded-full object-cover border-[0.5px] border-zinc-200 shrink-0"
                 />
                 <div>
                   <h4 className="font-sans text-sm font-bold text-zinc-900 leading-tight">

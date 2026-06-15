@@ -52,8 +52,8 @@ export const Navbar: React.FC<NavbarProps> = ({ language, setLanguage }) => {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? 'bg-white/90 backdrop-blur-md border-b border-zinc-100 shadow-sm'
-            : 'bg-transparent border-b border-transparent'
+            ? 'bg-white/90 backdrop-blur-md border-b-[0.5px] border-zinc-100 shadow-sm'
+            : 'bg-transparent border-b-[0.5px] border-transparent'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -81,7 +81,7 @@ export const Navbar: React.FC<NavbarProps> = ({ language, setLanguage }) => {
             {/* Language Switch & CTA Button */}
             <div className="hidden md:flex items-center gap-6">
               {/* Language Switcher Sliding Pill */}
-              <div className="bg-zinc-100 border border-zinc-200 p-1 rounded-full flex items-center relative gap-1">
+              <div className="bg-zinc-100 border-[0.5px] border-zinc-200 p-1 rounded-full flex items-center relative gap-1">
                 <Globe className="w-4 h-4 text-zinc-400 ml-2 mr-1" />
                 <button
                   onClick={() => setLanguage('id')}
@@ -131,7 +131,7 @@ export const Navbar: React.FC<NavbarProps> = ({ language, setLanguage }) => {
               {/* Simple Mobile Lang Switch Button */}
               <button
                 onClick={() => setLanguage(language === 'en' ? 'id' : 'en')}
-                className="bg-zinc-100 border border-zinc-200 text-zinc-700 px-3 py-1.5 rounded-full text-xs font-mono font-semibold"
+                className="bg-zinc-100 border-[0.5px] border-zinc-200 text-zinc-700 px-3 py-1.5 rounded-full text-xs font-mono font-semibold"
               >
                 {language === 'en' ? 'IND 🇮🇩' : 'ENG 🇬🇧'}
               </button>
@@ -156,7 +156,7 @@ export const Navbar: React.FC<NavbarProps> = ({ language, setLanguage }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="fixed top-20 left-0 right-0 z-40 bg-white/95 backdrop-blur-lg border-b border-zinc-150 py-6 px-6 md:hidden flex flex-col gap-6 shadow-md"
+            className="fixed top-20 left-0 right-0 z-40 bg-white/95 backdrop-blur-lg border-b-[0.5px] border-zinc-150 py-6 px-6 md:hidden flex flex-col gap-6 shadow-md"
           >
             <nav className="flex flex-col gap-4">
               {navLinks.map((link) => (
@@ -171,7 +171,7 @@ export const Navbar: React.FC<NavbarProps> = ({ language, setLanguage }) => {
               ))}
             </nav>
 
-            <div className="mt-2 pt-6 border-t border-zinc-100 flex flex-col gap-4">
+            <div className="mt-2 pt-6 border-t-[0.5px] border-zinc-100 flex flex-col gap-4">
               <a
                 href="#contact"
                 onClick={(e) => handleScrollTo(e, '#contact')}

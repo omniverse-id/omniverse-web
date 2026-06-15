@@ -28,7 +28,7 @@ export const Services: React.FC<ServicesProps> = ({ language }) => {
   };
 
   return (
-    <section id="services" className="py-24 bg-white border-t border-zinc-100 scroll-mt-10 relative">
+    <section id="services" className="py-24 bg-white border-t-[0.5px] border-zinc-100 scroll-mt-10 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Block */}
@@ -57,7 +57,7 @@ export const Services: React.FC<ServicesProps> = ({ language }) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-100px' }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white hover:bg-zinc-50/50 border border-zinc-105 hover:border-zinc-200 rounded-2xl p-8 transition-all duration-300 group flex flex-col justify-between shadow-sm hover:shadow-md"
+              className="bg-white hover:bg-zinc-50/50 border-[0.5px] border-zinc-200/80 hover:border-zinc-300 rounded-2xl p-8 transition-all duration-300 group flex flex-col justify-between shadow-sm hover:shadow-md"
             >
               <div className="space-y-6">
                 {/* Header Row */}
@@ -65,7 +65,7 @@ export const Services: React.FC<ServicesProps> = ({ language }) => {
                   <div className="text-zinc-800 transition-colors duration-200">
                     {getIconComponent(service.icon)}
                   </div>
-                  <span className="font-mono text-2xs tracking-wider uppercase border border-zinc-200 text-zinc-500 px-2.5 py-1 rounded bg-zinc-50 font-bold">
+                  <span className="font-mono text-2xs tracking-wider uppercase border-[0.5px] border-zinc-200 text-zinc-500 px-2.5 py-1 rounded bg-zinc-50 font-bold">
                     {service.badge[language]}
                   </span>
                 </div>
@@ -82,7 +82,7 @@ export const Services: React.FC<ServicesProps> = ({ language }) => {
               </div>
 
               {/* Action Trigger */}
-              <div className="mt-8 pt-6 border-t border-zinc-100 flex items-center justify-between">
+              <div className="mt-8 pt-6 border-t-[0.5px] border-zinc-100 flex items-center justify-between">
                 <button
                   onClick={() => setSelectedService(service)}
                   className="font-sans text-xs font-bold tracking-tight text-zinc-800 flex items-center gap-1.5 hover:text-zinc-950 transition-colors"
@@ -115,7 +115,7 @@ export const Services: React.FC<ServicesProps> = ({ language }) => {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 15 }}
               transition={{ type: 'spring', duration: 0.4 }}
-              className="relative w-full max-w-lg bg-white border border-zinc-150 rounded-2xl p-6 sm:p-8 z-10 shadow-2xl space-y-6 max-h-[85vh] sm:max-h-[90vh] overflow-y-auto"
+              className="relative w-full max-w-lg bg-white border-[0.5px] border-zinc-150 rounded-2xl p-6 sm:p-8 z-10 shadow-2xl space-y-6 max-h-[85vh] sm:max-h-[90vh] overflow-y-auto"
             >
               {/* Close Button */}
               <button
@@ -128,13 +128,13 @@ export const Services: React.FC<ServicesProps> = ({ language }) => {
 
               {/* Icon & Title block */}
               <div className="space-y-3 pt-2">
-                <div className="inline-flex text-zinc-900 border border-zinc-150 p-2.5 rounded-xl bg-zinc-50">
+                <div className="inline-flex text-zinc-900 border-[0.5px] border-zinc-150 p-2.5 rounded-xl bg-zinc-50">
                   {getIconComponent(selectedService.icon)}
                 </div>
                 <h3 className="font-sans text-2xl font-extrabold text-zinc-950 tracking-tight">
                   {selectedService.title[language]}
                 </h3>
-                <span className="inline-block font-mono text-2xs tracking-widest text-zinc-500 border border-zinc-200 bg-zinc-50 px-2.5 py-1 rounded">
+                <span className="inline-block font-mono text-2xs tracking-widest text-zinc-500 border-[0.5px] border-zinc-200 bg-zinc-50 px-2.5 py-1 rounded">
                   {selectedService.badge[language]}
                 </span>
               </div>
@@ -153,7 +153,7 @@ export const Services: React.FC<ServicesProps> = ({ language }) => {
                   <ul className="space-y-2">
                     {selectedService.features[language].map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-2.5 text-zinc-650 font-sans text-sm leading-relaxed font-semibold">
-                        <div className="bg-zinc-100 border border-zinc-200 text-zinc-800 p-0.5 mt-0.5 rounded">
+                        <div className="bg-zinc-100 border-[0.5px] border-zinc-200 text-zinc-800 p-0.5 mt-0.5 rounded">
                           <Check className="w-3.5 h-3.5 text-zinc-900" />
                         </div>
                         <span>{feature}</span>
@@ -164,7 +164,7 @@ export const Services: React.FC<ServicesProps> = ({ language }) => {
               </div>
 
               {/* Instant Call-to-action */}
-              <div className="pt-6 border-t border-zinc-100 flex items-center gap-3">
+              <div className="pt-6 border-t-[0.5px] border-zinc-100 flex items-center gap-3">
                 <a
                   href="#contact"
                   onClick={(e) => {
@@ -181,7 +181,7 @@ export const Services: React.FC<ServicesProps> = ({ language }) => {
                 </a>
                 <button
                   onClick={() => setSelectedService(null)}
-                  className="px-4 py-2.5 rounded-full font-sans text-zinc-500 hover:text-zinc-950 text-xs border border-zinc-200 hover:bg-zinc-50 transition-all font-bold"
+                  className="px-4 py-2.5 rounded-full font-sans text-zinc-500 hover:text-zinc-950 text-xs border-[0.5px] border-zinc-200 hover:bg-zinc-50 transition-all font-bold"
                 >
                   {translationKeys.closeDetails[language]}
                 </button>
