@@ -1,0 +1,6 @@
+{
+  "name": "Omniverse One",
+  "description": "Website profesional minimalis penyedia jasa teknologi – web design, software development, computer installation, dan system maintenance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
